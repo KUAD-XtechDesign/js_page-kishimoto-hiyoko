@@ -1,28 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="ja">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- 必要なライブラリをネット上から直接参照 CDN -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"/>
-    <!-- 自分のcss -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- 自分のjs -->
-    <script src="./js/script.js"></script>
-    <title>index</title>
-  </head>
-  <body>
+
     
+    <link rel="stylesheet" href="./css/style.css" />
+   
+    <script src="./js/script.js"></script>
+    <title>ベストバイ</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Best buy</h1>
+        <nav id='nav'>
+          <ul id="menu">　
+            <li class="menu"><div id="#btn01">No.1</a></li>
+            <li><div id="#btn02">No.2</a></li>
+            <li><div id="#btn03">No.3</a></li>
+          </ul>
+        </nav>
+        <div id="wave"></div>
+        <div id="line"></div>
+      </header>
+
+      <div class="each_work">
+        <div id="img01" class="img_button"><img src="./images/3553B2CE-6A38-4116-858B-1CEDBFBEEB57.jpeg"></div>
+        <div id="content01" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/4803CDB2-22C4-4763-8BAE-2D3B4B68E86C_1_105_c.jpeg" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>モニター</h2>
+              <div>
+                <p>￥44,820 </p>
+                <p>
+                  LG ゲーミング モニター 34WP65G-B 34インチ/ウルトラワイド(2560X1080)/IPS 非光沢/DisplayHDR 400/FreeSync/USB Type-C、DisplayPort、HDMI/高さ調節<br><br>視野が広がる画面で、ゲームをはじめとする様々な用途に適したウルトラワイドモニター<br>映像の1コマ間に黒画面を挿入し、残像感をなくす「1ms Motion Blur Reduction」 滑らかな描写を可能にするFreeSyncや、映像出力のタイムラグを抑えるDASモード 暗いシーンの視認性を高めるブラックスタビライザーなどのゲーム機能も搭載
+                  <br><br><iframe width="500" height="300" src="https://www.youtube.com/embed/FjStW6x33gs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
+      </div>
+      
+      <div class="each_work">
+        <div id="img02" class="img_button"><img src="./images/C4161563-5880-4B6B-A14B-143DF731726E.jpeg"></div>
+        <div id="content02" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/E584F518-D6EB-4D80-89F6-506512EDFB94.jpeg" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>ゲーミングチェア</h2>
+              <div>
+                <p>￥25,800</p>
+                <p>
+                  GTRACING ゲーミングチェア スピーカー付き オットマン<br><br>人間工学を基に設計された3D形状、体を優しく包み込み、極上のゲームプレイ体験やルームワークスをサポートします。ランバーサポート付きで、座面とクッションは柔らかいPUレザーを使用して長時間座っても疲れにくく快適です。<br>【収納式オットマン】足元のオットマンは必要なときだけ引きだせる収納式，リラックス時は、足先まで伸ばせて快適です，低い背もたれと組み合わせると、心配なく横たわることができます<br>【Bluetooth5.0 完全ワイヤレス】全てのBluetooth機器に対応。約15m以内にあるスマートフォンやタブレットをすぐに接続可能。内蔵のリチウムイオンバッテリーと先端の省電力技術によって15時間 / 120曲の長時間連続再生が可能。
+                  <br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
+      </div>
+
+      <div class="each_work">
+        <div id="img03" class="img_button"><img src="./images/DFED97A8-29AA-4947-88B9-7617A9F48CAF_1_105_c.jpeg"></div>
+        <div id="content03" class="content">
+          <div class="txt_img">
+            <div class="img">
+              <img src="./images/back03.jpg" alt="ダミー">
+            </div>
+            <div class="txt">
+              <h2>中村藤吉本店</h2>
+              <div>
+                <p>お問い合わせ 0774-22-2800 (予約不可)</p>
+                <p>
+                  京都の宇治に本店、京都駅や大阪にも直営店がある、日本茶専門店。甘味やそば、うどんなど様々な食べ方でお茶を味わえます。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="close_button">閉じる</div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
-
-<section class="wrapper">
-  <div class="container">
-      <div class="content">
-          <h2 class="heading">MESSAGE</h2>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      </div>
-  </div>
-</section>
