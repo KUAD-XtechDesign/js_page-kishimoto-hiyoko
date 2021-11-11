@@ -24,6 +24,8 @@ $(function(){
       $("body").removeClass().addClass("two")
     }else{
       $("body").removeClass().addClass("three")
+    }{
+      $("body").removeClass().addClass("four")
     }
 
     console.log(windowH,documentH,scrollTop)
@@ -47,6 +49,9 @@ $(function(){
     $("html, body").animate({scrollTop:separate*2}, 1000, "swing");
   })
 
+  $("#btn04").on("click",function(){
+    $("html, body").animate({scrollTop:separate*3}, 1000, "swing");
+  })
 
 
 })
