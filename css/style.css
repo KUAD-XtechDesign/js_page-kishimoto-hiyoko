@@ -1,0 +1,207 @@
+
+
+h1{
+    border-radius: 20px;
+    background: #ededed;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+#wave{
+    width:60px;
+    height: 60px;
+    background-image: url(../images/wave.png);
+    background-size: 60px auto;
+    background-position: center center;
+    background-repeat: repeat-x;
+    margin-left: auto;
+}
+
+body{
+    line-height: 2;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+  
+#nav{
+    top: 100px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+}
+
+#nav li{
+    display:inline-block;
+    padding-right: 30px;
+}
+
+#nav li a,
+#nav li span{
+    font-size:20px;
+    text-decoration: none;
+    margin:0 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#nav li a:hover,
+#nav li span{
+    color:#e20c0c;
+    
+}
+
+#nav li span{
+    border-bottom: 3px solid #e20c0c;
+}
+
+.wrapper{
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+  
+img{
+    max-width: 100%;
+}
+  
+.img_button img{
+    display: block;
+}
+  
+.content{
+    display: none;
+    position: relative;
+    padding: 30px;
+    background-color: rgb(250, 235, 215,0);
+    margin-bottom: 50px;
+}
+  
+.close_button{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #080808;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    transition: 0.9s all;
+}
+  
+.img_button{
+    transition: 0.9s all;
+    cursor: pointer;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    position: relative;
+}
+  
+.img_button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: 0.9s opacity;
+}
+  
+.img_button:hover::after{
+    opacity: 1;
+}
+  
+.txt_img{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+  
+.img{
+    width: 20%;
+}
+  
+.txt{
+    width: 80%;
+    padding: 10px;
+}
+  
+#img01{
+    margin-top: 100px;
+}
+
+#content02 .close_button{
+    background-color: #080808;
+}
+  
+#content03 .close_button{
+    background-color: #080808;
+}
+
+body.one #backimg01,
+body.two #backimg02,
+body.three #backimg03{
+  opacity: 1;
+}
+
+#back{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fcfcfc;
+}
+
+.backimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s all;
+}
+
+img2{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#line{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, white,black);
+}
+
+@media(color){
+    body{
+        background-color: white;
+    }
+}
+
+@media(monochrome){
+    body{
+        background-color: wheat;
+        color: black;
+    }
+}
